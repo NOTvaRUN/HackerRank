@@ -7,9 +7,11 @@
 function minimumBribes(q) {
     // Write your code here
     let skippedby = 0;
+    
     for(let [index, value]of q.entries()){
         if(value !== (index + 1)){
             skippedby = value - (index + 1);
+
             console.log(skippedby)
             if(skippedby >= 2){
                 console.log('too chaotic');

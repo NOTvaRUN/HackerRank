@@ -8,19 +8,20 @@
  */
 // understanding this is a bitch, but once you do its pretty easy.
 
+
 function dynamicArray(n, queries) {
     // Write your code here
     let array = new Array(n);
-    for(let i = 0; i < array.length; i++){
+    for (let i = 0; i < array.length; i++) {
         array[i] = [];
     }
     let lastAnswer = 0;
     let t = []
-    for(let query of queries){
+    for (let query of queries) {
         let q = query[0];
         let x = query[1];
         let y = query[2];
-        switch(q){
+        switch(q) {
             case 1:
                 array[index(x, lastAnswer)].push(y);
                 break;
@@ -36,4 +37,5 @@ function dynamicArray(n, queries) {
 function index(x, lastAnswer) {
     return ((x ^ lastAnswer) % 2);
 }
-dynamicArray(2, [ [ 1, 0, 5 ], [ 1, 1, 7 ], [ 1, 0, 3 ], [ 2, 1, 0 ], [ 2, 1, 1 ] ])
+
+dynamicArray(100, [ [ 1, 0, 5 ], [ 1, 1, 7 ], [ 1, 0, 3 ], [ 2, 1, 0 ], [ 2, 1, 1 ] ])

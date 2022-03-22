@@ -1,2 +1,2 @@
 # HackerRank
-Hanker rank solved problem
+Hanker rank solved problems

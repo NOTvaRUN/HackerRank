@@ -15,6 +15,7 @@ function matchingStrings(strings, queries) {
             obj[item] = 1 :
             obj[item]++;
     }
+    
     let tempArr = [];
     for (let item of queries) {
         tempArr.push(obj[item] ?? 0);

@@ -5,12 +5,12 @@
  * The function accepts INTEGER_ARRAY a as parameter.
  */
 
-function reverseArray(a) {
-    // Write your code here
-    let tempArray = [];
-    for (let i = (a.length - 1); i >= 0; i--) {
-        tempArray.push(a[i]);
+    function reverseArray(a) {
+        // Write your code here
+        let tempArray = [];
+        for (let i = (a.length - 1); i >= 0; i--) {
+            tempArray.push(a[i]);
+        }
+        return tempArray;
     }
-    return tempArray;
-}
-console.log(reverseArray([ 1, 4, 3, 2 ]));
+    console.log(reverseArray([ 1, 4, 3, 2 ]));
